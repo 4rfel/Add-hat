@@ -1,4 +1,5 @@
-import numpy as np
+# Rafael dos Santos
+
 import cv2
 import dlib
 
