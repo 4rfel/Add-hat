@@ -29,7 +29,6 @@ def add_hat(img):
 		resized_hat_w = int(rgb_hat.shape[1] * scaling_factor)
 		resized_hat_h = int(rgb_hat.shape[0] * scaling_factor)
 
-
 		resized_hat = cv2.resize(rgb_hat, (resized_hat_w, resized_hat_h))
 		hat_mask = cv2.resize(alpha_hat, (resized_hat_w, resized_hat_h))
 
@@ -51,7 +50,6 @@ def add_hat(img):
 			end_x = img.shape[1]
 
 		bg_roi = img[start_y:end_y, start_x:end_x].astype(float)
-
 		
 		mask_inv = cv2.bitwise_not(hat_mask)
 
